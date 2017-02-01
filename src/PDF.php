@@ -56,7 +56,7 @@ class PDF{
 
         $this->orientation = $this->config->get('laravel-dompdf::orientation') ?: 'portrait';
 
-        $this->dompdf = new \DOMPDF();
+        $this->dompdf = new \Dompdf\Dompdf();
         $this->dompdf->set_base_path(realpath($publicPath));
     }
 
